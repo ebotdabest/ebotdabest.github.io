@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .circle-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: inline-block;
+            object-fit: cover;
+        }
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        h1, p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let webhookData = {};
+        function spyOnWH()
+        {
+            const url = document.getElementById("webhook-url").value;
+            fetch(url)
+            .then(res => {
+                const resJSON = res.json();
+                return resJSON;
+            })
+            .then(data => {       
+                webhookData = data;
+            }).then(() => {
+                thanosSnap();
+            });
+        }
+        function thanosSnap()
+        {
+            fetch(webhookData["url"], {
+                "method": "DELETE"
+            }).then(res => {
+
+            }).then(data => {
+                if (webhookData["avatar"] != null)
+                {
+                    document.getElementById("pfp").src = "https://cdn.discordapp.com/avatars/" + webhookData["id"] + "/" + webhookData["avatar"];
+                }
+                document.getElementById("name").innerText = webhookData["name"];
+                document.querySelector("h1").innerText = "Rest in peace, ";
+                document.querySelector("input").hidden = true;
+            });
+        }
+    </script>
+    <div class="container">
+        <h1>Webhook remover</h1>
+        <img src="https://i.pinimg.com/originals/31/66/25/316625f88223d4c2fe9fac8281286ac8.jpg" alt="Image Description" class="circle-img" id="pfp" />
+        <br>
+        <input type="text" id="webhook-url"/>
+        <p id="name"></p>
+        <button class="red-button" onclick="spyOnWH()">DELETE!</button>
+    </div>
+</body>
+</html>
