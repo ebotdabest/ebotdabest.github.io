@@ -8,7 +8,7 @@ export class LangR {
         if (this.customPath == null) {
             let currentUrl = window.location.href;
             let url = new URL(currentUrl);
-            this.customPath = url.hostname;
+            this.customPath = url.origin;
             this.useAutoPath = true;
         }
         this.loadLang()
