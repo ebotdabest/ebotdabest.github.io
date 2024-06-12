@@ -8,10 +8,7 @@ export class LangR {
         if (this.customPath == null) {
             let currentUrl = window.location.href;
             let url = new URL(currentUrl);
-            let segments = url.pathname.split('/');
-            segments.pop();
-            let fPath = segments.join('/') + '/';
-            this.customPath = url.origin + fPath;
+            this.customPath = url.hostname;
             this.useAutoPath = true;
         }
         this.loadLang()
