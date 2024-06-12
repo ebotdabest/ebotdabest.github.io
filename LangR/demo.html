@@ -18,6 +18,7 @@
         body {
             font-family: 'Roboto';
             background-color: gray;
+            margin: 0px;
         }
 
         button {
@@ -37,6 +38,7 @@
 
         h1 {
             font-weight: bold;
+            padding-left: 35px;
         }
 
         .title {
@@ -46,6 +48,17 @@
 
         .lngselect {
             text-align: center;
+        }
+        .penguin-footer {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        p {
+            padding-left: 15px;
         }
     </style>
 </head>
@@ -60,5 +73,17 @@
     <hr>
     <h1 langr-key="demo.nonscenario.title"></h1>
     <h3 langr-key="demo.nonscenario.subject">I'm displayed in english due to being written here, but in the language files i'm not here</h3>
+    <hr>
+
+    <h1 langr-key="demo.mock.title"></h1>
+    <br>
+    <h1 langr-key="penguin.title">Penguin</h1>
+    <p langr-key="penguin.paragraphs.one"></p>
+    <p langr-key="penguin.paragraphs.two"></p>
+    <p langr-key="penguin.paragraphs.three"></p>
+    <br>
+    <p langr-key="penguin.funfact"></p>
+    <br>
+    <p langr-key="penguin.footer" class="penguin-footer">Penguin Paradise - Dedicated to celebrating and conserving the world of penguins. Join us in spreading awareness and fostering love for these amazing creatures.</p>
 </body>
 </html>

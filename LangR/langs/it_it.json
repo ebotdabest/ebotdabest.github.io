@@ -1,0 +1,14 @@
+{
+  "demo.toph1": "Demo di LangR!",
+  "demo.hubtn": "Passa all'ungherese",
+  "demo.enbtn": "Passa all'inglese",
+  "demo.nonscenario.title": "Cosa succede quando mancano le chiavi",
+  "demo.nonscenario.subject": "Ma esiste in ungherese (but it exists in Italian) [DO NOT EVER LET THIS SCENARIO HAPPEN, IT WILL NOT CHANGE BACK TO ENGLISH]",
+
+  "penguin.title": "Benvenuti nel Paradiso dei Pinguini",
+  "penguin.paragraphs.one": "I pinguini sono creature straordinarie, note per la loro resistenza e natura sociale. Principalmente residenti nell'emisfero meridionale, in particolare in Antartide, sono ben adattati alla vita nell'acqua e sul ghiaccio. Con i loro corpi aerodinamici e le forti pinne, i pinguini trascorrono fino al 75% della loro vita nell'oceano, cacciando pesci, krill e calamari.",
+  "penguin.paragraphs.two": "Nonostante la loro andatura goffa sulla terra, i pinguini sono nuotatori eccezionalmente agili. Le dure condizioni dell'Artico li hanno plasmati come sopravvissuti efficienti con piume dense e impermeabili che forniscono un'incredibile isolamento contro il freddo. I pinguini vivono in grandi colonie chiamate rookery, alcune delle quali contano decine di migliaia di individui, che aiutano a proteggerli dai predatori e a riscaldarsi l'un l'altro contro il freddo brutale.",
+  "penguin.paragraphs.three": "Gli sforzi di conservazione sono cruciali per i pinguini, poiché il cambiamento climatico e le attività umane continuano a minacciare i loro habitat. Imparare a conoscere il loro comportamento e il loro ambiente aiuta a elaborare strategie per preservare le loro popolazioni e garantire che le generazioni future possano continuare a godere e imparare da questi affascinanti uccelli.",
+  "penguin.funfact": "Sapevi che il Pinguino Imperatore è il più alto e il più pesante di tutte le specie di pinguini? Possono rimanere sott'acqua per circa 20 minuti e immergersi fino a una profondità di 500 metri!",
+  "penguin.footer": "Paradiso dei Pinguini - Dedicato a celebrare e conservare il mondo dei pinguini. Unisciti a noi nella diffusione della consapevolezza e dell'amore per queste incredibili creature."
+}

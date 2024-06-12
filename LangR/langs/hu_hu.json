@@ -1,7 +1,14 @@
 {
   "demo.toph1": "LangR bemutató!",
-  "demo.hubtn": "Magyarra váltás",
-  "demo.enbtn": "Angolra váltás",
-  "demo.nonscenario.title": "Mi történik ha egy kulcs hiányzik?",
-  "demo.nonscenario.subject": "De magyarul létezik (but it exists in hungarian) [DO NOT EVER LET THIS SCENARIO HAPPEN, IT WILL NOT CHANGE BACK TO ENGLISH]"
+  "demo.hubtn": "Váltás magyarra",
+  "demo.enbtn": "Váltás angolra",
+  "demo.nonscenario.title": "Mi történik, ha hiányoznak a kulcsok",
+  "demo.nonscenario.subject": "De magyarul létezik (but it exists in Hungarian) [NE HAGYJA, HOGY EZ A HELYZET ELŐFORDULJON, NEM FOG VISSZAVÁLTANI ANGOLRA]",
+
+  "penguin.title": "Üdvözöljük a Pingvinek Paradicsomában",
+  "penguin.paragraphs.one": "A pingvinek figyelemre méltó teremtmények, amelyek kitartásukról és társas természetükről ismertek. Főként a déli féltekén, különösen az Antarktiszon élnek, jól alkalmazkodtak a vízben és a jégen való élethez. Áramvonalas testükkel és erős úszóikkal a pingvinek életük akár 75%-át is az óceánban töltik, halakat, krillt és tintahalakat vadászva.",
+  "penguin.paragraphs.two": "A szárazföldön való esetlen sétájuk ellenére a pingvinek kivételesen ügyes úszók. Az Északi-sarkvidék zord körülményei hatékony túlélőkké formálták őket sűrű, vízálló tollazatukkal, amely hihetetlen szigetelést nyújt a hideg ellen. A pingvinek nagy kolóniákban, úgynevezett fészkelőhelyeken élnek, amelyek néha több tízezer egyedet számlálnak, ami segít megvédeni őket a ragadozóktól és melegen tartani egymást a kegyetlen hidegben.",
+  "penguin.paragraphs.three": "A pingvinek számára a megőrzési erőfeszítések létfontosságúak, mivel az éghajlatváltozás és az emberi tevékenységek továbbra is veszélyeztetik élőhelyeiket. Viselkedésük és környezetük megismerése segít stratégiákat kidolgozni populációik megőrzésére és biztosítani, hogy a jövő generációi is továbbra is élvezhessék és tanulhassanak ezekből a lenyűgöző madarakból.",
+  "penguin.funfact": "Tudta, hogy a császárpingvin a legmagasabb és legnehezebb az összes pingvinfaj közül? Körülbelül 20 percig maradhatnak a víz alatt, és akár 500 méter mélyre is lemerülhetnek!",
+  "penguin.footer": "Pingvinek Paradicsoma - A pingvinek világának ünneplésére és megőrzésére szentelve. Csatlakozzon hozzánk, hogy terjesszük a tudatosságot és a szeretetet ezek iránt a csodálatos teremtmények iránt."
 }
