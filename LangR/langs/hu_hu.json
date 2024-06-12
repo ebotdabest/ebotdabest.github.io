@@ -2,6 +2,9 @@
   "demo.toph1": "LangR bemutató!",
   "demo.hubtn": "Váltás magyarra",
   "demo.enbtn": "Váltás angolra",
+  "demo.itbtn": "Váltás olaszra",
+  "demo.esbtn": "Váltás spanyolra",
+  "demo.rubtn": "Váltás oroszra",
   "demo.nonscenario.title": "Mi történik, ha hiányoznak a kulcsok",
   "demo.nonscenario.subject": "De magyarul létezik (but it exists in Hungarian) [NE HAGYJA, HOGY EZ A HELYZET ELŐFORDULJON, NEM FOG VISSZAVÁLTANI ANGOLRA]",
 

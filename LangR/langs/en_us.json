@@ -2,6 +2,9 @@
   "demo.toph1": "LangR demo!",
   "demo.hubtn": "Switch to hungarian",
   "demo.enbtn": "Switch to english",
+  "demo.itbtn": "Switch to italian",
+  "demo.esbtn": "Switch to spanish",
+  "demo.rubtn": "Switch to russian",
   "demo.nonscenario.title": "What happens when keys are missing",
 
   "penguin.title": "Welcome to Penguin Paradise",

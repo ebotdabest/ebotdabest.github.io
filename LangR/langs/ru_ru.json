@@ -2,6 +2,9 @@
   "demo.toph1": "Демо LangR!",
   "demo.hubtn": "Переключить на венгерский",
   "demo.enbtn": "Переключить на английский",
+  "demo.itbtn": "Переключить на итальянский",
+  "demo.esbtn": "Переключить на испанский",
+  "demo.rubtn": "Переключить на русский",
   "demo.nonscenario.title": "Что происходит, когда ключи отсутствуют",
   "demo.nonscenario.subject": "Но существует на венгерском (but it exists in Russian) [DO NOT EVER LET THIS SCENARIO HAPPEN, IT WILL NOT CHANGE BACK TO ENGLISH]",
 

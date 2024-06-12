@@ -2,6 +2,9 @@
   "demo.toph1": "Demo di LangR!",
   "demo.hubtn": "Passa all'ungherese",
   "demo.enbtn": "Passa all'inglese",
+  "demo.itbtn": "Passa all'italiano",
+  "demo.esbtn": "Passa allo spagnolo",
+  "demo.rubtn": "Passa al russo",
   "demo.nonscenario.title": "Cosa succede quando mancano le chiavi",
   "demo.nonscenario.subject": "Ma esiste in ungherese (but it exists in Italian) [DO NOT EVER LET THIS SCENARIO HAPPEN, IT WILL NOT CHANGE BACK TO ENGLISH]",
 
