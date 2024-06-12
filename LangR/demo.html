@@ -11,12 +11,51 @@
             currentKey: 'en_us'
         })
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto';
+            background-color: gray;
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: Roboto;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 325%;
+        }
+
+        .lngselect {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1 langr-key="demo.toph1"></h1>
+    <h1 langr-key="demo.toph1" class="title"></h1>
 
-    <button onclick="LangR.changeLang('en_us')" langr-key="demo.enbtn"></button>
-    <button onclick="LangR.changeLang('hu_hu')" langr-key="demo.hubtn"></button>
+    <div class="lngselect">
+        <button onclick="LangR.changeLang('en_us')" langr-key="demo.enbtn"></button>
+        <button onclick="LangR.changeLang('hu_hu')" langr-key="demo.hubtn"></button>
+    </div>
 
     <hr>
     <h1 langr-key="demo.nonscenario.title"></h1>
