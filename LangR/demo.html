@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LangR demo</title>
+    <script type="module">
+        import { LangR } from 'https://ebotdabest.github.io/LangR/langr.js'
+
+        LangR.init({
+            rootPath: 'LangR/langs',
+            currentKey: 'en_us'
+        })
+    </script>
+</head>
+<body>
+    <h1 langr-key="demo.toph1"></h1>
+
+    <button onclick="LangR.updateLang('hu_hu')" langr-key="demo.hubtn"></button>
+    <button onclick="LangR.updateLang('en_us')" langr-key="demo.enbtn"></button>
+
+    <hr>
+    <h1 langr-key="demo.nonscenario.title"></h1>
+    <h3 langr-key="demo.nonscenario.subject">I'm displayed in english due to being written here, but in the language files i'm not here</h3>
+</body>
+</html>
