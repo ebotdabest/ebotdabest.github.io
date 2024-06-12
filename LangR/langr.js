@@ -12,6 +12,7 @@ export class LangR {
             this.useAutoPath = true;
         }
         this.loadLang()
+        window.LangR = LangR
     }
 
     static updateLang(langData) {
