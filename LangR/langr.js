@@ -22,7 +22,7 @@ export class LangR {
         window.LangR = LangR
     }
 
-    static updateLang(langData) {
+    static updateLang(langData, watchSpec = false) {
         document.querySelectorAll("[langr-key]").forEach(el => {
             const langrKey = el.getAttribute("langr-key");
 
@@ -34,8 +34,10 @@ export class LangR {
             try {
                 const translation = langData[langrKey];
                 if (translation && translation.includes("<prec>")) {
-                    el.innerHTML = translation.replace("<prec>", originalContent);
-                    this.secondReload = true;
+                    if (watchSpec) {
+                        el.innerHTML = translation.replace("<prec>", originalContent);
+                        this.secondReload = true;
+                    }
                 } else if (translation) {
                     el.innerText = translation;
                 } else if (this.forceRename) {
@@ -48,7 +50,7 @@ export class LangR {
         });
         if (this.secondReload) {
             this.secondReload = false;
-            this.updateLang(langData);
+            this.updateLang(langData)
         }
     }
 
