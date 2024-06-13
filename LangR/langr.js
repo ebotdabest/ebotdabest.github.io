@@ -22,35 +22,28 @@ export class LangR {
     }
 
     static updateLang(langData) {
-        document.querySelectorAll("[langr-key]").forEach(el => {
-            const langrKey = el.getAttribute("langr-key");
+        document.querySelectorAll("[langr-data-key]").forEach(el => {
+            const langrKey = el.getAttribute("langr-data-key");
+
+            if (!el.hasAttribute("langr-original-content")) {
+                el.setAttribute("langr-original-content", el.innerText);
+            }
+            let originalContent = el.getAttribute("langr-original-content");
+
             try {
-                if (langData[langrKey] != null) {
-                    let originalContent;
-                    if (el.hasAttribute("langr-original-content")) {
-                       originalContent = el.getAttribute("langr-original-content");
-                    }else {
-                        el.setAttribute("langr-original-content", el.innerText);
-                        originalContent = el.innerText;
-                    }
-
-                    const translation = langData[langrKey];
-                    if (translation.includes("<prec>")) {
-                        el.innerText = translation.replace("<prec>", originalContent);
-                    }else {
-                        el.innerText = translation;
-                    }
-                }else {
-                    if (this.forceRename) {
-                        el.innerText = "Key " + langrKey + " not found!";
-                    }
+                const translation = langData[langrKey];
+                if (translation && translation.includes("<prec>")) {
+                    el.innerText = translation.replace("<prec>", originalContent);
+                } else if (translation) {
+                    el.innerText = translation;
+                } else if (this.forceRename) {
+                    el.innerText = `Key ${langrKey} not found!`;
                 }
-
-            }catch (e) {
-                console.error("[LangR] ERROR: The key " + langrKey + " does not exist!");
+            } catch (e) {
+                console.error(`[LangR] ERROR: The key ${langrKey} does not exist!`);
                 console.error(e);
             }
-        })
+        });
     }
 
     static loadLang() {
