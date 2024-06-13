@@ -48,6 +48,7 @@ export class LangR {
 
             }catch (e) {
                 console.error("[LangR] ERROR: The key " + langrKey + " does not exist!");
+                console.error(e);
             }
         })
     }
