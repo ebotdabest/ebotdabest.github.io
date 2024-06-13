@@ -4,6 +4,7 @@ export class LangR {
         this.key = args.currentKey;
         this.customPath = args.bigPath;
         this.forceRename = args.forceRename;
+        this.secondReload = false;
 
         this.useAutoPath = false;
         if (this.customPath == null) {
@@ -34,6 +35,7 @@ export class LangR {
                 const translation = langData[langrKey];
                 if (translation && translation.includes("<prec>")) {
                     el.innerHTML = translation.replace("<prec>", originalContent);
+                    this.secondReload = true;
                 } else if (translation) {
                     el.innerText = translation;
                 } else if (this.forceRename) {
@@ -44,6 +46,10 @@ export class LangR {
                 console.error(e);
             }
         });
+        if (this.secondReload) {
+            this.secondReload = false;
+            this.updateLang(langData);
+        }
     }
 
     static loadLang() {
