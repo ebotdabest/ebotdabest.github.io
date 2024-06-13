@@ -1,5 +1,7 @@
 {
   "demo.toph1": "LangR demo!",
+  "demo.repo": "Demo for the <prec> front-end language manager",
+  "demo.link": "LangR",
   "demo.hubtn": "Switch to hungarian",
   "demo.enbtn": "Switch to english",
   "demo.itbtn": "Switch to italian",
