@@ -22,7 +22,7 @@ export class LangR {
         window.LangR = LangR
     }
 
-    static updateLang(langData, watchSpec = false) {
+    static updateLang(langData, watchSpec = true) {
         document.querySelectorAll("[langr-key]").forEach(el => {
             const langrKey = el.getAttribute("langr-key");
 
@@ -50,7 +50,7 @@ export class LangR {
         });
         if (this.secondReload) {
             this.secondReload = false;
-            this.updateLang(langData)
+            this.updateLang(langData, false)
         }
     }
 
