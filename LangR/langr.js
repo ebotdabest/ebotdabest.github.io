@@ -35,7 +35,7 @@ export class LangR {
                     }
 
                     const translation = langData[langrKey];
-                    if (translation.contains("<prec>")) {
+                    if (translation.includes("<prec>")) {
                         el.innerText = translation.replace("<prec>", originalContent);
                     }else {
                         el.innerText = translation;
