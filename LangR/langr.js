@@ -27,6 +27,8 @@ export class LangR {
 
             if (!el.hasAttribute("langr-original-content")) {
                 el.setAttribute("langr-original-content", el.innerText);
+                el.setAttribute("langr-original-content", el.innerText);
+                el.attributes["langr-original-content"] = el.innerText;
             }
             let originalContent = el.getAttribute("langr-original-content");
 
