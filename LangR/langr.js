@@ -26,7 +26,20 @@ export class LangR {
             const langrKey = el.getAttribute("langr-key");
             try {
                 if (langData[langrKey] != null) {
-                    el.innerText = langData[langrKey];
+                    let originalContent;
+                    if (el.hasAttribute("langr-original-content")) {
+                       originalContent = el.getAttribute("langr-original-content");
+                    }else {
+                        el.setAttribute("langr-original-content", el.innerText);
+                        originalContent = el.innerText;
+                    }
+
+                    const translation = langData[langrKey];
+                    if (translation.contains("<prec>")) {
+                        el.innerText = translation.replace("<prec>", originalContent);
+                    }else {
+                        el.innerText = translation;
+                    }
                 }else {
                     if (this.forceRename) {
                         el.innerText = "Key " + langrKey + " not found!";
