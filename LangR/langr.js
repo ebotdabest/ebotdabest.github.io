@@ -33,7 +33,7 @@ export class LangR {
             try {
                 const translation = langData[langrKey];
                 if (translation && translation.includes("<prec>")) {
-                    el.innerText = translation.replace("<prec>", originalContent);
+                    el.innerHTML = translation.replace("<prec>", originalContent);
                 } else if (translation) {
                     el.innerText = translation;
                 } else if (this.forceRename) {
