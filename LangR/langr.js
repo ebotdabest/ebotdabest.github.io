@@ -25,12 +25,10 @@ export class LangR {
         document.querySelectorAll("[langr-key]").forEach(el => {
             const langrKey = el.getAttribute("langr-key");
 
-            if (!el.hasAttribute("langr-original-content")) {
-                el.setAttribute("langr-original-content", el.innerText);
-                el.setAttribute("langr-original-content", el.innerText);
-                el.attributes["langr-original-content"] = el.innerText;
+            if (!el.hasAttribute("data-original")) {
+                el.dataset.original = el.innerText;
             }
-            let originalContent = el.getAttribute("langr-original-content");
+            let originalContent = el.dataset.original;
 
             try {
                 const translation = langData[langrKey];
