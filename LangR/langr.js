@@ -26,7 +26,7 @@ export class LangR {
             const langrKey = el.getAttribute("langr-key");
 
             if (!el.hasAttribute("data-original")) {
-                el.dataset.original = el.innerText;
+                el.dataset.original = el.innerHTML;
             }
             let originalContent = el.dataset.original;
 
