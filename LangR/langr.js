@@ -22,8 +22,8 @@ export class LangR {
     }
 
     static updateLang(langData) {
-        document.querySelectorAll("[langr-data-key]").forEach(el => {
-            const langrKey = el.getAttribute("langr-data-key");
+        document.querySelectorAll("[langr-key]").forEach(el => {
+            const langrKey = el.getAttribute("langr-key");
 
             if (!el.hasAttribute("langr-original-content")) {
                 el.setAttribute("langr-original-content", el.innerText);
